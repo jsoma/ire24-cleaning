@@ -14,8 +14,8 @@ This stuff really only makes sense once you've tried it out, so we have workshee
     - [Blank worksheet](https://docs.google.com/spreadsheets/d/1hnM7Tl_fiwXFzb7nVDlvH6oA8Dj4ecch31kEMrkpQEQ/edit?usp=sharing)
     - [Completed worksheet](https://docs.google.com/spreadsheets/d/12lm2_pWDv8W5n83Qc2h3XRcmt-G8T4IYG1jO8Bsv_U0/edit?usp=sharing)
 - **Python**
-    - Blank worksheet
-    - Completed worksheet
+    - [Blank worksheet](https://github.com/jsoma/ire24-cleaning/blob/main/pandas%20data%20cleaning%20worksheet.ipynb), [open in Google Colab](https://colab.research.google.com/github/jsoma/ire24-cleaning/blob/main/pandas%20data%20cleaning%20worksheet.ipynb)
+    - [Completed worksheet](https://github.com/jsoma/ire24-cleaning/blob/main/COMPLETED%20pandas%20data%20cleaning%20worksheet.ipynb), [open in Google Colab](https://colab.research.google.com/github/jsoma/ire24-cleaning/blob/main/COMPLETED%20pandas%20data%20cleaning%20worksheet.ipynb)
 
 # The details
 
