@@ -1,5 +1,9 @@
 ---
 title: 30 data cleaning tips in 60 minutes
+html:
+    theme: cosmo   # cosmo bootswatch theme
+    linkcolor: red
+
 ---
 
 This is a workshop for [IRE 2024](https://schedules.ire.org/ire-2024/) about **a few general data cleaning tips!** It's taught by me, [Jonathan Soma](https://jonathansoma.com/everything/), Knight Chair in Data Journalism at Columbia Journalism School.
