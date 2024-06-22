@@ -8,9 +8,12 @@ You might also be interested in my series [Practical AI for Investigative Journa
 
 You can also see the [original GitHub repository](https://github.com/jsoma/ire24-scraping)
 
-# The worksheets
 
-This stuff really only makes sense once you've tried it out, so we have worksheets!
+## Content
+
+**Slides:** Slides are [here](https://raw.githubusercontent.com/jsoma/ire24-cleaning/main/slides.pdf)
+
+This stuff really only makes sense once you've tried it out, so we also have worksheets!
 
 **Google Sheets**
 
