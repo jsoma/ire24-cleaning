@@ -1,9 +1,11 @@
 ---
 title: 30 data cleaning tips in 60 minutes
-html:
-    theme: cosmo   # cosmo bootswatch theme
-    linkcolor: red
-
+format:
+    html:
+        toc: true
+        toc-depth: 3
+        theme: cosmo
+        linkcolor: red
 ---
 
 This is a workshop for [IRE 2024](https://schedules.ire.org/ire-2024/) about **a few general data cleaning tips!** It's taught by me, [Jonathan Soma](https://jonathansoma.com/everything/), Knight Chair in Data Journalism at Columbia Journalism School.
@@ -31,9 +33,9 @@ This stuff really only makes sense once you've tried it out, so we also have wor
 
 You can also see the [original GitHub repository](https://github.com/jsoma/ire24-scraping)
 
-# The details
+# Text manipulation
 
-##  Text manipulation: Substitute with nothing
+##  Substitute with nothing
 
 Let's say you have `66 years old` and just want the `66`. The easiest approach is to just remove the ` years old` portion.
 
@@ -57,7 +59,7 @@ df['age'].str.replace(" years old", "")
 
 :::
 
-##  Text manipulation: Convert to a number
+##  Convert to a number
 
 If you converted `66 years old` to juse `66`, you usually *also* have to make sure your software knows it's a number. This is formally known as "type casting."
 
@@ -81,7 +83,7 @@ df['age'].str.replace(" years old", "").astype(int)
 
 :::
 
-##  Text manipulation: Split
+##  Split
 
 If you have text that looks like `j soma, js4571@columbia.edu, @dangerscarf` and want to get each section individually, you can split on the `, `. The result will now take up multiple columns.
 
@@ -119,7 +121,7 @@ df.head()
 ```
 :::
 
-## Text manipulation: Split and get first (...or second or third)
+## Split and get first (...or second or third)
 
 If you have text that looks like `j soma, js4571@columbia.edu, @dangerscarf` and want to just get the email address, you can split and ask for the second portion.
 
@@ -144,7 +146,7 @@ df['details'].str.split(", ").str[1]
 
 :::
 
-## Text manipulation: Split and get last
+## Split and get last
 
 ::: {.panel-tabset}
 
@@ -168,13 +170,13 @@ df['details'].str.split(", ").str[-1]
 
 :::
 
-## Text manipulation: Double split!!!
+## Double split!!!
 
 Honestly, just do this across multiple columns.
 
 If you have `j soma, js4571@columbia.edu, @dangerscarf`, split once on `", "` to split up the pieces and take the second one. Then split again on `"@"` and take the second portion.
 
-## Text manipulation: Split on many characters
+## Split on many characters
 
 ::: {.panel-tabset}
 
@@ -190,7 +192,7 @@ If you have `j soma, js4571@columbia.edu, @dangerscarf`, split once on `", "` to
 
 :::
 
-## Text manipulation: Get last (or first) *n* characters 
+## Get last (or first) *n* characters 
 
 ::: {.panel-tabset}
 
@@ -220,7 +222,9 @@ df['details'].str[:12]
 
 :::
 
-## Regex: match everything
+# Regex
+
+## Match everything
 
 When you want to extract something with regular expressions, you wrap it in parentheses. 
 
@@ -248,7 +252,7 @@ df['details'].str.extract(r"I am (.*) years old")
 
 Don't forget you might need to convert the result to a number! (see above)
 
-## Regex: numbers ONLY
+## Numbers ONLY
 
 You can also use regex to only match numbers. For example, if you wanted to find a phone number formatted like `555-555-5555`, you would replace every number with a `\d`.
 
@@ -270,13 +274,13 @@ df['details'].str.extract(r"(\d\d\d-\d\d\d-\d\d\d\d)")
 
 :::
 
-## Regex: optional elements
+## Optional elements
 
 Maybe the phone number could be formatted as 555-555-5555 *or* 
 
 Put a question mark after anything that's optional `(\d\d\d-?\d\d\d-?\d\d\d\d)`.
 
-## Regex: anything
+## Anything
 
 Maybe the phone number could be formatted as 555-555-5555 *or* 5555555555 *or* 555+555+
 
@@ -284,11 +288,11 @@ Instead of demanding we match an optional `-`, we can use `.` to say "this could
 
 Our final regex would look like `(\d\d\d.?\d\d\d.?\d\d\d\d)`.
 
-## Regex: escaping
+## Escaping
 
 One problem in regex is if you want to match a special character. If we wanted to use `.` to talk about an *actual* period instead of the "this could be anything," we'd write `\.` instead.
 
-## Regex: replace [...] in Google Sheets without a formula
+## Replace [...] in Google Sheets without a formula
 
 Since `[` and `]` are special characters, you need to escape them! To replace `[u]` or `[x]` or `[example]`, your pattern is going to be `\[.\[`.
 
@@ -296,7 +300,7 @@ Since `[` and `]` are special characters, you need to escape them! To replace `[
  Replace "anything" with `.`: `[.]`
  Add `\` to special characters: `\[.\]`
 
-## Regex: matches pattern, not replaces
+## Matches pattern, not replaces
 
 While you usually use regex for extracting information, sometimes you just want a yes/no about whether it exists.
 
@@ -316,7 +320,9 @@ df['details'].str.contains(r"\d\d\d-\d\d\d-\d\d\d\d")
 
 :::
 
-## Google Sheets: ARRAYFORMULA
+# Other things
+
+## ARRAYFORMULA
 
 Instead of dragging down a formula, use `ARRAYFORMULA`!
 
@@ -338,7 +344,7 @@ Instead, write it in *one cell*, wrap it in `ARRAYFORMULA`, and adjust your cell
 
 :::
 
-## Formulas: missing data
+## Missing data
 
 ::: {.panel-tabset}
 
@@ -357,7 +363,7 @@ The only problem with `ARRAYFORMULA` is that it goes alllll the way down the pag
 
 :::
 
-## Addresses: Geocoding
+## Geocoding
 
 Geocoding is the act of converting from addresses to latitude and longitude.
 
@@ -365,7 +371,7 @@ Geocoding is the act of converting from addresses to latitude and longitude.
 * Sheets: [Geocode by Awesome Table](https://workspace.google.com/marketplace/app/geocode_by_awesome_table/904124517349)
 * Python: [Geocoder](https://geocoder.readthedocs.io/)
 
-## Addresses: Reverse geocoding
+## Reverse geocoding
 
 *Reverse* geocoding is the act of converting from latitude and longitude to approximate addresses.
 
@@ -375,27 +381,24 @@ Geocoding is the act of converting from addresses to latitude and longitude.
 
 :::
 
-## Regex: non-capture groups
+## Text analysis: Edit distance and fuzzy matching
 
-::: {.panel-tabset}
+Sometimes you need to combine "Jonathan Soma," "Jonathan P Soma," and "Soma, Jonathan" all into one listing. Fuzzy matching is what you're looking for!
 
-### Sheets
+* Non-coding: [OpenRefine](https://openrefine.org/)
+* Python: [csvmatch](https://github.com/maxharlow/csvmatch)
 
-```go
-```
+## Text analysis: Entity extraction
 
-### Python
+I could talk forever about entity extraction! Check out [this workshop I gave at Abraji](https://jsoma.github.io/2023-abraji-ai-workshop/) for more details.
 
-```py
-```
+# Table formatting
 
-:::
-
-## Table formatting: Transposing
+## Transposing
 
 Transposing is when you switch rows and columns. If you ever have a chart in [Datawrapper](https://app.datawrapper.de/) that looks awful, that might be your solution! They have a "Transpose" button in the step for checking your data.
 
-## Table formatting: Convert from long to wide
+## Convert from long to wide
 
 ::: {.panel-tabset}
 
@@ -411,7 +414,7 @@ Transposing is when you switch rows and columns. If you ever have a chart in [Da
 
 :::
 
-## Table formatting: Convert from wide to long
+## Convert from wide to long
 
 ::: {.panel-tabset}
 
@@ -426,6 +429,8 @@ Transposing is when you switch rows and columns. If you ever have a chart in [Da
 ```
 
 :::
+
+# AI stuff
 
 ## Audio transcription
 
@@ -435,7 +440,7 @@ Everything is based on [Whisper](https://github.com/openai/whisper), but the onl
 * Windows: [EasyWhisper](https://easywhisper.io/)
 * Python: [Insanely Fast Whisper](https://github.com/Vaibhavs10/insanely-fast-whisper)
 
-## OCR: OCR with open models 
+## OCR with open models 
 
 If you're still using Tesseract, you're doing yourself a disservice! Apparently this new one, [Florence 2](https://huggingface.co/spaces/gokaygokay/Florence-2), is really good.
 
@@ -453,21 +458,9 @@ If you're still using Tesseract, you're doing yourself a disservice! Apparently 
 
 :::
 
-## OCR: Corrections from AI
+## OCR corrections
 
 If you have a bad OCR, try pushing it through a large language model like ChatGPT. It's great at making assumptions and fixing typos! Even if it hallucinates, it's probably better than what you had initially (and you're sure to double-check, right??).
-
-## Text analysis: Edit distance and fuzzy matching
-
-Sometimes you need to combine "Jonathan Soma," "Jonathan P Soma," and "Soma, Jonathan" all into one listing. Fuzzy matching is what you're looking for!
-
-* Non-coding: [OpenRefine](https://openrefine.org/)
-* Python: [csvmatch](https://github.com/maxharlow/csvmatch)
-
-## Text analysis: Entity extraction
-
-I could talk forever about entity extraction! Check out [this workshop I gave at Abraji](https://jsoma.github.io/2023-abraji-ai-workshop/) for more details.
-
 
 ## Claude in Google Sheets
 
