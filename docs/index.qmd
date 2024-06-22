@@ -512,3 +512,7 @@ result
 ```
 
 The best part is the `max_retries` bit - if the LLM gives us something that *doesn't* fit the schema, Instructor just asks it to fix it!
+
+# Contact
+
+Feel free to reach out! You can find me [on Twitter](https://twitter.com/dangerscarf) or on email at [js4571@columbia.edu](mailto:js4571@columbia.edu).
