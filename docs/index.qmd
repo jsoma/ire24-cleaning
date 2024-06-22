@@ -405,13 +405,11 @@ Transposing is when you switch rows and columns. If you ever have a chart in [Da
 
 ### Sheets
 
-```go
-```
+[Go watch this](https://www.youtube.com/watch?v=IC6COa5PcN0)
 
 ### Python
 
-```py
-```
+[Read the pandas documentation!](https://pandas.pydata.org/docs/user_guide/reshaping.html)
 
 :::
 
@@ -421,13 +419,11 @@ Transposing is when you switch rows and columns. If you ever have a chart in [Da
 
 ### Sheets
 
-```go
-```
+[Go read this](https://www.benlcollins.com/spreadsheets/unpivot-in-google-sheets/)
 
 ### Python
 
-```py
-```
+[Read the pandas documentation!](https://pandas.pydata.org/docs/user_guide/reshaping.html)
 
 :::
 
@@ -445,19 +441,7 @@ Everything is based on [Whisper](https://github.com/openai/whisper), but the onl
 
 If you're still using Tesseract, you're doing yourself a disservice! Apparently this new one, [Florence 2](https://huggingface.co/spaces/gokaygokay/Florence-2), is really good.
 
-::: {.panel-tabset}
-
-### Sheets
-
-```go
-```
-
-### Python
-
-```py
-```
-
-:::
+Go look at my [PDFs section](https://jonathansoma.com/everything/pdfs/selecting-your-tool/) on Everything I Know.
 
 ## OCR corrections
 

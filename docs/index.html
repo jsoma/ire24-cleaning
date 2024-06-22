@@ -3445,10 +3445,10 @@ vertical-align: -.125em;
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-13-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-1" role="tab" aria-controls="tabset-13-1" aria-selected="true" href>Sheets</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-2" role="tab" aria-controls="tabset-13-2" aria-selected="false" href>Python</a></li></ul>
 <div class="tab-content">
 <div id="tabset-13-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-13-1-tab">
-<div class="sourceCode" id="cb28"><pre class="sourceCode go code-with-copy"><code class="sourceCode go"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="https://www.youtube.com/watch?v=IC6COa5PcN0">Go watch this</a></p>
 </div>
 <div id="tabset-13-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-2-tab">
-<div class="sourceCode" id="cb29"><pre class="sourceCode py code-with-copy"><code class="sourceCode python"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="https://pandas.pydata.org/docs/user_guide/reshaping.html">Read the pandas documentation!</a></p>
 </div>
 </div>
 </div>
@@ -3459,10 +3459,10 @@ vertical-align: -.125em;
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-14-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-1" role="tab" aria-controls="tabset-14-1" aria-selected="true" href>Sheets</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-2" role="tab" aria-controls="tabset-14-2" aria-selected="false" href>Python</a></li></ul>
 <div class="tab-content">
 <div id="tabset-14-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-14-1-tab">
-<div class="sourceCode" id="cb30"><pre class="sourceCode go code-with-copy"><code class="sourceCode go"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="https://www.benlcollins.com/spreadsheets/unpivot-in-google-sheets/">Go read this</a></p>
 </div>
 <div id="tabset-14-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-2-tab">
-<div class="sourceCode" id="cb31"><pre class="sourceCode py code-with-copy"><code class="sourceCode python"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="https://pandas.pydata.org/docs/user_guide/reshaping.html">Read the pandas documentation!</a></p>
 </div>
 </div>
 </div>
@@ -3482,17 +3482,7 @@ vertical-align: -.125em;
 <section id="ocr-with-open-models" class="level2">
 <h2 class="anchored" data-anchor-id="ocr-with-open-models">OCR with open models</h2>
 <p>If you’re still using Tesseract, you’re doing yourself a disservice! Apparently this new one, <a href="https://huggingface.co/spaces/gokaygokay/Florence-2">Florence 2</a>, is really good.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-15-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-1" role="tab" aria-controls="tabset-15-1" aria-selected="true" href>Sheets</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-15-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-2" role="tab" aria-controls="tabset-15-2" aria-selected="false" href>Python</a></li></ul>
-<div class="tab-content">
-<div id="tabset-15-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-15-1-tab">
-<div class="sourceCode" id="cb32"><pre class="sourceCode go code-with-copy"><code class="sourceCode go"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="tabset-15-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-15-2-tab">
-<div class="sourceCode" id="cb33"><pre class="sourceCode py code-with-copy"><code class="sourceCode python"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
+<p>Go look at my <a href="https://jonathansoma.com/everything/pdfs/selecting-your-tool/">PDFs section</a> on Everything I Know.</p>
 </section>
 <section id="ocr-corrections" class="level2">
 <h2 class="anchored" data-anchor-id="ocr-corrections">OCR corrections</h2>
@@ -3502,36 +3492,36 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="claude-in-google-sheets">Claude in Google Sheets</h2>
 <p>Maybe you have an unformatted document and want to pull out the company’s name from it, but even regex has failed you.</p>
 <p><a href="https://workspace.google.com/marketplace/app/claude_for_sheets/909417792257">Claude for Sheets</a> is like magic! Great for extracting content. You’ll need an <a href="https://console.anthropic.com/settings/keys">API key</a> to set it up, which is like a username/password for using the LLM outside of the chatbot.</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode go code-with-copy"><code class="sourceCode go"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span>CLAUDEEXTRACT<span class="op">(</span><span class="st">&quot;company name&quot;</span><span class="op">,</span> A2<span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode go code-with-copy"><code class="sourceCode go"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span>CLAUDEEXTRACT<span class="op">(</span><span class="st">&quot;company name&quot;</span><span class="op">,</span> A2<span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Watch my video <a href="https://www.youtube.com/watch?v=5MHEMedLWeI">Structured, validated data from LLMs for more details</a></p>
 </section>
 <section id="guardrailsinstructor" class="level2">
 <h2 class="anchored" data-anchor-id="guardrailsinstructor">Guardrails/Instructor</h2>
 <p>You can also extract structured data from LLMs using tools like <a href="https://python.useinstructor.com/">Instructor</a> or <a href="https://github.com/guardrails-ai/guardrails">Guardrails</a>. I used to be a Guardrails guy, but it’s honestly way too overengineered. I’m on team Instructor these days.</p>
 <p>Let’s say we had some content that looks like this.</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode py code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>comment <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="st">FROM: Mulberry Peppertown, mulberry (at) example.com</span></span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="st">When I pick up the cans of beans they are all so light! At</span></span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="st">first I thought they were empty, but it turns out they are just</span></span>
-<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="st">futuristic beans that are not heavy like the old style beans </span></span>
-<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="st">I was used to. It is incredible.</span></span>
-<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;&quot;&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode py code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>comment <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="st">FROM: Mulberry Peppertown, mulberry (at) example.com</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="st">When I pick up the cans of beans they are all so light! At</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="st">first I thought they were empty, but it turns out they are just</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="st">futuristic beans that are not heavy like the old style beans </span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="st">I was used to. It is incredible.</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;&quot;&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>We can use Instructor to extract the content we’re looking for in a structured way.</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode py code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Comment(BaseModel):</span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    name: <span class="bu">str</span> <span class="op">=</span> Field(description<span class="op">=</span><span class="st">&quot;Person who submitted the comment&quot;</span>)</span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    email: Optional[<span class="bu">str</span>] <span class="op">=</span> Field(description<span class="op">=</span><span class="st">&quot;Email address of commenter&quot;</span>)</span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>    food_item: <span class="bu">str</span> <span class="op">=</span> Field(description<span class="op">=</span><span class="st">&quot;Food item the comment is about&quot;</span>)</span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>    emotion: Literal[<span class="st">&quot;positive&quot;</span>, <span class="st">&quot;negative&quot;</span>, <span class="st">&quot;uncertain&quot;</span>]</span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> instructor.from_openai(OpenAI())</span>
-<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> client.chat.completions.create(</span>
-<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>    response_model<span class="op">=</span>Comment,</span>
-<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>    messages<span class="op">=</span>[{<span class="st">&quot;role&quot;</span>: <span class="st">&quot;user&quot;</span>, <span class="st">&quot;content&quot;</span>: comment}],</span>
-<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>    max_retries<span class="op">=</span><span class="dv">3</span></span>
-<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a>result</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode py code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Comment(BaseModel):</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    name: <span class="bu">str</span> <span class="op">=</span> Field(description<span class="op">=</span><span class="st">&quot;Person who submitted the comment&quot;</span>)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    email: Optional[<span class="bu">str</span>] <span class="op">=</span> Field(description<span class="op">=</span><span class="st">&quot;Email address of commenter&quot;</span>)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    food_item: <span class="bu">str</span> <span class="op">=</span> Field(description<span class="op">=</span><span class="st">&quot;Food item the comment is about&quot;</span>)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    emotion: Literal[<span class="st">&quot;positive&quot;</span>, <span class="st">&quot;negative&quot;</span>, <span class="st">&quot;uncertain&quot;</span>]</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> instructor.from_openai(OpenAI())</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> client.chat.completions.create(</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>    response_model<span class="op">=</span>Comment,</span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>    messages<span class="op">=</span>[{<span class="st">&quot;role&quot;</span>: <span class="st">&quot;user&quot;</span>, <span class="st">&quot;content&quot;</span>: comment}],</span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>    max_retries<span class="op">=</span><span class="dv">3</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>result</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The best part is the <code>max_retries</code> bit - if the LLM gives us something that <em>doesn’t</em> fit the schema, Instructor just asks it to fix it!</p>
 </section>
 </section>
