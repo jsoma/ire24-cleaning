@@ -23,8 +23,9 @@ This stuff really only makes sense once you've tried it out, so we also have wor
 
 **Google Sheets**
 
-- [Blank worksheet](https://docs.google.com/spreadsheets/d/1hnM7Tl_fiwXFzb7nVDlvH6oA8Dj4ecch31kEMrkpQEQ/edit?usp=sharing)
+- [Blank worksheet](https://docs.google.com/spreadsheets/d/1j4-X60X-n-fV-drlVzgVpejHaYOV0kywtBXyJnXcdEA/edit?usp=sharing)
 - [Completed worksheet](https://docs.google.com/spreadsheets/d/12lm2_pWDv8W5n83Qc2h3XRcmt-G8T4IYG1jO8Bsv_U0/edit?usp=sharing)
+- [Completed worksheet from in class](https://docs.google.com/spreadsheets/d/1hnM7Tl_fiwXFzb7nVDlvH6oA8Dj4ecch31kEMrkpQEQ/edit?usp=sharing) (which definitely has less stuff in it than the other completed one!)
 
 **Python**
 
