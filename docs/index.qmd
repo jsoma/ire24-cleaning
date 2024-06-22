@@ -227,6 +227,8 @@ df['details'].str[:12]
 
 # Regex
 
+**Just ask ChatGPT**, honestly. Your job is to proof the results, not understand the process.
+
 ## Match everything
 
 When you want to extract something with regular expressions, you wrap it in parentheses. 
@@ -297,7 +299,7 @@ One problem in regex is if you want to match a special character. If we wanted t
 
 ## Replace [...] in Google Sheets without a formula
 
-Since `[` and `]` are special characters, you need to escape them! To replace `[u]` or `[x]` or `[example]`, your pattern is going to be `\[.\[`.
+Since `[` and `]` are special characters, you need to escape them! To replace `[u]` or `[x]` or `[example]`, your pattern is going to be `\[.*?\[`.
 
  Our original content: `[u]`
  Replace "anything" with `.`: `[.]`
