@@ -177,6 +177,7 @@ Honestly, just do this across multiple columns.
 
 If you have `j soma, js4571@columbia.edu, @dangerscarf`, split once on `", "` to split up the pieces and take the second one. Then split again on `"@"` and take the second portion.
 
+<!-- 
 ## Split on many characters
 
 ::: {.panel-tabset}
@@ -191,7 +192,8 @@ If you have `j soma, js4571@columbia.edu, @dangerscarf`, split once on `", "` to
 ```py
 ```
 
-:::
+::: 
+-->
 
 ## Get last (or first) *n* characters 
 
@@ -371,6 +373,8 @@ Geocoding is the act of converting from addresses to latitude and longitude.
 * Drag and drop: [Geocodio](https://geocod.io/)
 * Sheets: [Geocode by Awesome Table](https://workspace.google.com/marketplace/app/geocode_by_awesome_table/904124517349)
 * Python: [Geocoder](https://geocoder.readthedocs.io/)
+
+If your addresses are all in one column, Geocodio requires you to split it into street, city, state, etc. You can probably do that with splitting or regex, as covered above!
 
 ## Reverse geocoding
 
